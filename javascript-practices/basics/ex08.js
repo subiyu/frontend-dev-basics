@@ -8,7 +8,7 @@ var o = {
 };
 
 var f = function() {
-    console.log("Hello World2");
+    console.log("Hello World3");
 };
 
 console.log("=== 확장(object 타입) ===");
