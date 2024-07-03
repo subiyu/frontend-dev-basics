@@ -1,0 +1,1 @@
+/* null과 undefined */
