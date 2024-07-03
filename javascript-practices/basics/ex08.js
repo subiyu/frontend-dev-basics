@@ -9,7 +9,6 @@ var o = {
 
 var f = function() {
     console.log("Hello World");
-    
 };
 
 console.log("=== 확장(object 타입) ===");
@@ -17,7 +16,7 @@ o.another = {
     name: "마이콜",
     age: 20,
     print: function() {
-        console.log(this.name + ":" + this.age);   
+        console.log(this.name + ":" + this.age);
     }
 }
 
@@ -29,7 +28,7 @@ f.another = {
     name: "마이콜",
     age: 20,
     print: function() {
-        console.log(this.name + ":" + this.age);   
+        console.log(this.name + ":" + this.age);
     }
 };
 
