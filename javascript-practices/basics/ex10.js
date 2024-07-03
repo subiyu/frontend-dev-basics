@@ -61,4 +61,4 @@ console.log(o6['0'], o6[1], o6[2], o6['name'], o6['age'], "length:"+o6.length);
 console.log("=== for ~in: 객체 =====");
 for(prop in o6) {
     console.log(prop + ":" + a6[prop]);
-}
+};

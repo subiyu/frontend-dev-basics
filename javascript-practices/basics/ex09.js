@@ -19,7 +19,7 @@ var o1 = new MyObject("둘리", 10);
 o1.info();
 o1.school = 'poscodx';
 o1.info();
-
+   
 // MyObject 인스턴스 생성2
 var o2 = new MyObject("마이콜", 20);
 o2.info = function() {

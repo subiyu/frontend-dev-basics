@@ -12,7 +12,7 @@ var MyObject = function(name, age) {
     this.name = name;
     this.age = age;
 }
-
+   
 var o1 = new MyObject("둘리", 10);
 var o2 = new MyObject("둘리", 20);
 

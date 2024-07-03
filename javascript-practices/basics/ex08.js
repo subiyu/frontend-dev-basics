@@ -40,7 +40,7 @@ var i1 = 10;
 var i2 = new Number(10);
 
 console.log(i1 + ":" + i2 + ":" + (i1 + i2));
-
+   
 i2.antoher = {
     name: "마이콜",
     age: 20

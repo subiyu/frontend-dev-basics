@@ -45,6 +45,7 @@
 
 console.log("=== 기본타입(undefined, number, string, boolean) ======");
 var u;
+   
 var i = 10;
 var s = 'hello world';
 var b = true;

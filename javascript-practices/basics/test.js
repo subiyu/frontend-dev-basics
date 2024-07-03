@@ -11,7 +11,7 @@ var o = {
 var f = function() {
     console.log("Hello World");
 };
-
+   
 console.log("=== 확장(object 타입) ==="); 
 
 o.another = {
