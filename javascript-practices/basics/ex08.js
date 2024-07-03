@@ -35,7 +35,7 @@ f.another = {
 console.log(f);
 f.another.print();
 
-console.log("=== 확장: 기본타입() 은 ===")
+console.log("=== 확장: 기본타입(primitive) 은 ===")
 var i1 = 10;
 var i2 = new Number(10);
 
