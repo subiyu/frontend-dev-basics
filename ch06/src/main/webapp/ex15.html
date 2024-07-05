@@ -4,6 +4,29 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+<script>
+window.addEventListener('load', function() {
+	document
+		.getElementById('form-login')
+		.addEventListener('submit', function(event) { 	//Event Model 2
+			event.preventDefault();
+		
+		var email = document.getElementById("input-email").value;
+		if(email == '') {
+			alert('이메일이 비어 있습니다.');
+			return;
+		}
+		
+		var password = document.getElementById("input-password").value;
+		if(password == '') {
+			alert('비밀번호가 비어 있습니다.');
+			return;
+		}
+		
+		this.submit();
+	});
+});
+</script>
 <body>
 	<h1>DOM(Document Object Model)</h1>
 	<h2>6. 기본(default) Event Hanlder 동작 막기 - 2. form: DOM Event Model Level2</h2>
