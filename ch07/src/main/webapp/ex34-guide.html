@@ -16,19 +16,38 @@ var images = [
     "펭귄:Penguins.jpg", 
     "툴립:Tulips.jpg"
 ];
-
 var changeImage = function() {
 	var index = Math.floor(Math.random() * images.length);
 	var info = images[index].split(":");
-	console.log(info);
-	//$('.image-viewer img').attr('src', '');
-}
+	$('.image-viewer img').attr('alt', info[0]).attr('src', 'images/' + info[1]);
+};
 
 $(function() {
 	$('#btn-change').click(function() {
 		changeImage();
 	});
-})
+});
+
+var currentIndex = 1;
+
+var slideShow = function() {
+	var info = images[currentIndex].split(":");
+	console.log(info);
+	$('.image-viewer img').attr({
+		alt: info[0],
+		src: 'images/' + info[1]
+	});
+	currentIndex ++;
+	if(currentIndex >= images.length) {
+		currentIndex = 0;
+	}
+};
+
+$(function() {
+	$('#btn-slideshow').click(function() {
+		setInterval(slideShow, 1000);
+	});
+});
 
 </script>
 </head>
@@ -42,5 +61,12 @@ $(function() {
 			<img/>
 		</div>
 	</div>
+	<script>
+        // 초기 이미지 설정
+        $(function() {
+            var defaultImageInfo = images[0].split(":");
+            $('.image-viewer img').attr('alt', defaultImageInfo[0]).attr('src', 'images/' + defaultImageInfo[1]);
+        });
+    </script>
 </body>
 </html>
